@@ -32,6 +32,11 @@ def perm(s, r=None):
 # sort and uniq yourself. Better to keep composability
 
 for x in sorted(set(perm('anagram'))):
+    if 'aa' in x \
+    or 'mnr' in x \
+    or 'rng' in x \
+    or 'nrg' in x:
+        continue
     print x
 
 # TODO # assign probability of being English word
